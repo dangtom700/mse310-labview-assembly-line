@@ -1,0 +1,28 @@
+Start button connect to the button on LED display
+Stop button pause the process until power cutoff
+
+When Top Thing is activated
+- False:
+	- Check the signal in Top Solenoid
+		- True:
+			Don't activate the Sort Solenoid
+		- False:
+			- Check 5 plastic rings
+				- True:
+					Activate the Sort Solenoid
+				- False:
+					Let the plastic ring pass
+- True:
+	- Do nothing
+
+When Bottom Metal and Assembled are activated
+- Both True (pass the production test):
+	Send NO signal to  Reject Solenoid
+- Only Bottom Metal is active or both False
+	Send YES signal to Reject Solenoid
+
+When Top Solenoid (Port 0 Line 4) is active
+- True:
+	Do nothing
+- False:
+	Send Yes signal: Reject Solenoid carry out the action

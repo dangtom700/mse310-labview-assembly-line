@@ -1,0 +1,27 @@
+# Binary-heavy archive: disable all text normalisation so git never rewrites
+# line endings or tries to diff CAD/instrument files. Nothing here is edited
+# in-repo, so storing bytes as-is is the correct behaviour.
+* -text
+
+# Explicit binary declarations (suppresses diff/merge attempts)
+*.SLDPRT  binary
+*.SLDASM  binary
+*.SLDDRW  binary
+*.STEP    binary
+*.step    binary
+*.sldprt  binary
+*.sldasm  binary
+*.slddrw  binary
+*.cwr     binary
+*.opm     binary
+*.vi      binary
+*.pdsprj  binary
+*.ces     binary
+*.prd     binary
+*.hex     binary
+*.obj     binary
+*.pdf     binary
+*.docx    binary
+*.zip     binary
+*.png     binary
+*.jpg     binary

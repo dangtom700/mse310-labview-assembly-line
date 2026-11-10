@@ -1,0 +1,10 @@
+# LabVIEW local/user state
+*.lvlps
+*.aliases
+*.lvbitx
+
+# Office lock/temp files
+~$*
+*.tmp
+Thumbs.db
+desktop.ini
